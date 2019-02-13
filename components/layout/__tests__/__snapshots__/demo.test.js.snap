@@ -4,35 +4,38 @@ exports[`renders ./components/layout/demo/basic.md correctly 1`] = `
 <div>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <header
       class="ant-layout-header"
     >
       Header
-    </div>
-    <div
+    </header>
+    <main
       class="ant-layout-content"
     >
       Content
-    </div>
-    <div
+    </main>
+    <footer
       class="ant-layout-footer"
     >
       Footer
-    </div>
+    </footer>
   </div>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <header
       class="ant-layout-header"
     >
       Header
-    </div>
+    </header>
     <div
       class="ant-layout"
+      tagname="section"
     >
-      <div
+      <aside
         class="ant-layout-sider ant-layout-sider-dark"
         style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
       >
@@ -41,36 +44,38 @@ exports[`renders ./components/layout/demo/basic.md correctly 1`] = `
         >
           Sider
         </div>
-      </div>
-      <div
+      </aside>
+      <main
         class="ant-layout-content"
       >
         Content
-      </div>
+      </main>
     </div>
-    <div
+    <footer
       class="ant-layout-footer"
     >
       Footer
-    </div>
+    </footer>
   </div>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <header
       class="ant-layout-header"
     >
       Header
-    </div>
+    </header>
     <div
       class="ant-layout"
+      tagname="section"
     >
-      <div
+      <main
         class="ant-layout-content"
       >
         Content
-      </div>
-      <div
+      </main>
+      <aside
         class="ant-layout-sider ant-layout-sider-dark"
         style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
       >
@@ -79,18 +84,19 @@ exports[`renders ./components/layout/demo/basic.md correctly 1`] = `
         >
           Sider
         </div>
-      </div>
+      </aside>
     </div>
-    <div
+    <footer
       class="ant-layout-footer"
     >
       Footer
-    </div>
+    </footer>
   </div>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <aside
       class="ant-layout-sider ant-layout-sider-dark"
       style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
     >
@@ -99,25 +105,26 @@ exports[`renders ./components/layout/demo/basic.md correctly 1`] = `
       >
         Sider
       </div>
-    </div>
+    </aside>
     <div
       class="ant-layout"
+      tagname="section"
     >
-      <div
+      <header
         class="ant-layout-header"
       >
         Header
-      </div>
-      <div
+      </header>
+      <main
         class="ant-layout-content"
       >
         Content
-      </div>
-      <div
+      </main>
+      <footer
         class="ant-layout-footer"
       >
         Footer
-      </div>
+      </footer>
     </div>
   </div>
 </div>
@@ -126,8 +133,9 @@ exports[`renders ./components/layout/demo/basic.md correctly 1`] = `
 exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
 <div
   class="ant-layout"
+  tagname="section"
 >
-  <div
+  <aside
     class="ant-layout-sider ant-layout-sider-dark"
     style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
@@ -224,11 +232,12 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
         </li>
       </ul>
     </div>
-  </div>
+  </aside>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <header
       class="ant-layout-header"
       style="background:#fff;padding:0"
     >
@@ -251,13 +260,13 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
           />
         </svg>
       </i>
-    </div>
-    <div
+    </header>
+    <main
       class="ant-layout-content"
       style="margin:24px 16px;padding:24px;background:#fff;min-height:280px"
     >
       Content
-    </div>
+    </main>
   </div>
 </div>
 `;
@@ -265,8 +274,9 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
 exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
 <div
   class="ant-layout"
+  tagname="section"
 >
-  <div
+  <header
     class="ant-layout-header"
     style="position:fixed;z-index:1;width:100%"
   >
@@ -369,8 +379,8 @@ exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
         </div>
       </li>
     </ul>
-  </div>
-  <div
+  </header>
+  <main
     class="ant-layout-content"
     style="padding:0 50px;margin-top:64px"
   >
@@ -420,21 +430,22 @@ exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
     >
       Content
     </div>
-  </div>
-  <div
+  </main>
+  <footer
     class="ant-layout-footer"
     style="text-align:center"
   >
     Ant Design ©2018 Created by Ant UED
-  </div>
+  </footer>
 </div>
 `;
 
 exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
 <div
   class="ant-layout"
+  tagname="section"
 >
-  <div
+  <aside
     class="ant-layout-sider ant-layout-sider-dark"
     style="overflow:auto;height:100vh;position:fixed;left:0;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
@@ -682,16 +693,17 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
       </ul>
     </div>
-  </div>
+  </aside>
   <div
     class="ant-layout"
     style="margin-left:200px"
+    tagname="section"
   >
-    <div
+    <header
       class="ant-layout-header"
       style="background:#fff;padding:0"
     />
-    <div
+    <main
       class="ant-layout-content"
       style="margin:24px 16px 0;overflow:initial"
     >
@@ -794,13 +806,13 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         <br />
         content
       </div>
-    </div>
-    <div
+    </main>
+    <footer
       class="ant-layout-footer"
       style="text-align:center"
     >
       Ant Design ©2018 Created by Ant UED
-    </div>
+    </footer>
   </div>
 </div>
 `;
@@ -808,8 +820,9 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
 exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
 <div
   class="ant-layout"
+  tagname="section"
 >
-  <div
+  <aside
     class="ant-layout-sider ant-layout-sider-dark"
     style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
@@ -941,15 +954,16 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
         </li>
       </ul>
     </div>
-  </div>
+  </aside>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <header
       class="ant-layout-header"
       style="background:#fff;padding:0"
     />
-    <div
+    <main
       class="ant-layout-content"
       style="margin:24px 16px 0"
     >
@@ -958,13 +972,13 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
       >
         content
       </div>
-    </div>
-    <div
+    </main>
+    <footer
       class="ant-layout-footer"
       style="text-align:center"
     >
       Ant Design ©2018 Created by Ant UED
-    </div>
+    </footer>
   </div>
 </div>
 `;
@@ -973,8 +987,9 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
 <div
   class="ant-layout"
   style="min-height:100vh"
+  tagname="section"
 >
-  <div
+  <aside
     class="ant-layout-sider ant-layout-sider-dark ant-layout-sider-has-trigger"
     style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
@@ -1172,15 +1187,16 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
         </svg>
       </i>
     </div>
-  </div>
+  </aside>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <header
       class="ant-layout-header"
       style="background:#fff;padding:0"
     />
-    <div
+    <main
       class="ant-layout-content"
       style="margin:0 16px"
     >
@@ -1218,13 +1234,13 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
       >
         Bill is a cat.
       </div>
-    </div>
-    <div
+    </main>
+    <footer
       class="ant-layout-footer"
       style="text-align:center"
     >
       Ant Design ©2018 Created by Ant UED
-    </div>
+    </footer>
   </div>
 </div>
 `;
@@ -1232,8 +1248,9 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
 exports[`renders ./components/layout/demo/top.md correctly 1`] = `
 <div
   class="layout ant-layout"
+  tagname="section"
 >
-  <div
+  <header
     class="ant-layout-header"
   >
     <div
@@ -1335,8 +1352,8 @@ exports[`renders ./components/layout/demo/top.md correctly 1`] = `
         </div>
       </li>
     </ul>
-  </div>
-  <div
+  </header>
+  <main
     class="ant-layout-content"
     style="padding:0 50px"
   >
@@ -1386,21 +1403,22 @@ exports[`renders ./components/layout/demo/top.md correctly 1`] = `
     >
       Content
     </div>
-  </div>
-  <div
+  </main>
+  <footer
     class="ant-layout-footer"
     style="text-align:center"
   >
     Ant Design ©2018 Created by Ant UED
-  </div>
+  </footer>
 </div>
 `;
 
 exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
 <div
   class="ant-layout"
+  tagname="section"
 >
-  <div
+  <header
     class="header ant-layout-header"
   >
     <div
@@ -1502,8 +1520,8 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
         </div>
       </li>
     </ul>
-  </div>
-  <div
+  </header>
+  <main
     class="ant-layout-content"
     style="padding:0 50px"
   >
@@ -1551,8 +1569,9 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
     <div
       class="ant-layout"
       style="padding:24px 0;background:#fff"
+      tagname="section"
     >
-      <div
+      <aside
         class="ant-layout-sider ant-layout-sider-dark"
         style="background:#fff;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
       >
@@ -1711,29 +1730,30 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
             </li>
           </ul>
         </div>
-      </div>
-      <div
+      </aside>
+      <main
         class="ant-layout-content"
         style="padding:0 24px;min-height:280px"
       >
         Content
-      </div>
+      </main>
     </div>
-  </div>
-  <div
+  </main>
+  <footer
     class="ant-layout-footer"
     style="text-align:center"
   >
     Ant Design ©2018 Created by Ant UED
-  </div>
+  </footer>
 </div>
 `;
 
 exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
 <div
   class="ant-layout"
+  tagname="section"
 >
-  <div
+  <header
     class="header ant-layout-header"
   >
     <div
@@ -1835,11 +1855,12 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
         </div>
       </li>
     </ul>
-  </div>
+  </header>
   <div
     class="ant-layout"
+    tagname="section"
   >
-    <div
+    <aside
       class="ant-layout-sider ant-layout-sider-dark"
       style="background:#fff;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
     >
@@ -1998,10 +2019,11 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
           </li>
         </ul>
       </div>
-    </div>
+    </aside>
     <div
       class="ant-layout"
       style="padding:0 24px 24px"
+      tagname="section"
     >
       <div
         class="ant-breadcrumb"
@@ -2044,12 +2066,12 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
           </span>
         </span>
       </div>
-      <div
+      <main
         class="ant-layout-content"
         style="background:#fff;padding:24px;margin:0;min-height:280px"
       >
         Content
-      </div>
+      </main>
     </div>
   </div>
 </div>
